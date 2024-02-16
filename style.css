@@ -1,0 +1,32 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+
+#about {
+    height: 100vh;
+    background-color: white;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+.Ttext {
+    display: flex ;
+    position: relative;
+    top: 100px;
+    left: 150px;
+    font-size: 2.2em;
+    font-family: "Raleway";
+    font-weight: 800;
+    width: fit-content;
+    color:black;
+}
