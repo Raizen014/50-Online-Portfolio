@@ -1,6 +1,6 @@
 #home {
     background-image: linear-gradient(rgba(0, 0, 0, 0.8),
-    rgba(0, 0, 0, 0.8)), url(resources/background/bgHome1.jpg);
+    rgba(0, 0, 0, 0.8)), url(resources/bgHome1.jpg);
     background-size: cover;
     background-attachment: fixed;
     background-repeat: no-repeat;
@@ -39,7 +39,7 @@ nav {
 
 .logo {
     background-position: center;
-    background-image: url(resources/logos/logo.png);
+    background-image: url(resources/logo.png);
     background-repeat: no-repeat;
     width: 130px;
     height: 50px;
@@ -48,7 +48,7 @@ nav {
 }
 
 .logo:hover {
-    background-image: url(resources/logos/logo_active.png);
+    background-image: url(resources/logo_active.png);
     transition: linear 0.2s;
 
 }
