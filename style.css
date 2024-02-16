@@ -30,3 +30,31 @@ body {
     width: fit-content;
     color:black;
 }
+
+#aboutDiv {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    position: relative;
+    top: 500px;
+    font-size: 2.2em;
+    font-family: "Raleway";
+}
+
+#contact {
+    height: 100vh;
+    background-color: white;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+#contactDiv {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    position: relative;
+    top: 500px;
+    font-size: 2.2em;
+    font-family: "Raleway";
+}
