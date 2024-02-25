@@ -37,8 +37,13 @@
                     <h1 id="name"> AERON GARCIA</h1>
                     <h3 id="field">a passionate <span>Web Developer!</span></h3>
                     <p id ="desc">based in Lucena City with a flair for UI/UX Design. Through this digital portal,<br> I invite you to explore my journey, projects, and the creative endeavors that define who I am.</p>
-
+                    <div class="socialMedia">
+                        <a href="https://web.facebook.com/norea.aicrag.3" target="_blank"><div id="FBIcon"></div></a>
+                        <a href="https://twitter.com/AeronGarciaaa" target="_blank"><div id="TwtIcon"></div></a>
+                        <a href="https://www.instagram.com/aerongarciaaa/" target="_blank"><div id="InstIcon"></div></a>
+                    </div>
                 </div>
+
                 <div class="rightDiv">
                     <img id="Avatar" src="resources/Avatar.png" alt="">
                 </div>
@@ -122,13 +127,26 @@
 
         <section id="contact">
             <div class="Ttext">
-                <h1>Contact Me</h1>
+                <h1>Contact</h1>
             </div>
-            <div id="contactDiv">
-                <h1>WORK IN PROGRESS...</h1>
-            </div>
+            <div class="container">
+                <div class="contactDiv">
+                    <form id="contactForm" action="none">
+                        <input type="text" id="name" name="name" placeholder="Full Name">
+                        <input type="email" id="email" name="email" placeholder="Email Address">
+                        <textarea name="message" id="message" cols="30" rows="10"></textarea>
+                        <button type="submit" class="submit_btn">Send Message!</button>
+                    </form>
+                </div>
 
+            </div>
         </section>
+
+        <footer>
+            <div>
+                <h1>FOOTER</h1>
+            </div>
+        </footer>
 
 
 
@@ -151,6 +169,11 @@
                 }
                 });
             });
+
+            function toggleMenu() {
+            var nav = document.querySelector('nav ul');
+            nav.classList.toggle('active');
+        }
         </script>
     </body>
 </html>
