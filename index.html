@@ -9,22 +9,22 @@
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="home.css">
     <link rel="stylesheet" href="project.css">
-    <link href="https://fonts.googleapis.com/css2?family=Kaushan+Script&family=Oswald:wght@500&family=Raleway:wght@700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Kaushan+Script&family=Oswald:wght@500&family=Raleway:wght@400&display=swap" rel="stylesheet">
 
 </head>
     <body>
 
-        <header id="headbar">
-            <div class="logo"></div>
+        <header id="headbar" class="headbar">
+            <div class="logo" class="headbar" onclick="scrollToSection('home')"></div>
             <nav>
                 <ul>
-                    <li><a href="#home">Home</a></li>
-                    <li><a href="#about">About</a></li>
-                    <li><a href="#projects">Projects</a></li>
-                    <li><a href="#contact">Contact</a></li>
+                    <li><a class="headbar" onclick="scrollToSection('home')">Home</a></li>
+                    <li><a class="headbar" onclick="scrollToSection('about')">About</a></li>
+                    <li><a class="headbar" onclick="scrollToSection('projects')">Projects</a></li>
+                    <li><a class="headbar" onclick="scrollToSection('contact')">Contact</a></li>
                 </ul>
             </nav>
-            <button id="message">
+            <button id="message" onclick="scrollToSection('contact')">
                 Message Me!
                 <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADIAAAAyCAYAAAAeP4ixAAAACXBIWXMAAAsTAAALEwEAmpwYAAAEy0lEQVR4nNWaa4hVVRTH73XMrEymrCyrUbM0bCyLjKCSComgFwWBQQRFTX241Ud7EAhBWJ+SEJI+GBWVXYMeEkVmWUlvsLGH0IPS7GXZ++XU/GLh/9Byd865+9zHuXcWDDNn773W2muf9V+PfaZSGcMEXAy8D7xaGYsEnA5s5D/aXhlLBMwFnnAGjOr3I5WxQMDhwEpgRBvfCSwB1ur5ukovEzBJG/5ZG/5LBh0MVIFvNH5spRcJ2AsYchv9B3gMOMqtGdTcV2ZUpZeI3ad8KfCxw8HzwIkpa2s9iQ9gEfCOM+At4Oyc9fWewodc5GlnwOdyq3E5PL2DD/N34GEXQr8FrgcmBOvGA3sHY93HB3AQcLcikNGvwO3A5JS1RwObLeF5Y7qKD2A/4FbgJ23CcsK9wGEZ689RvkBlSF9X8WG+DlyhU/WRaF4Oz5BLfn8C87uKD0WiYWfAa8DCnPUTgVXsSTd0DR/AqcAGt5kPlR+qDcqQNwIjngl5SsGHvWpl4CQSbZebjG/Ad5pO2NPXwNSUtZ3Dh07zPuBvKfkRuAXYN4L3WhfBfnAlyaKUtVWF6fbiI6Wo26WibmoEr+WHZe4N3A9s1d/LMnjai4+Uom5ULjWrQC5ZL94/FNUsORq9HSbFtuMjp6g7qYCM+cBn4t0GLACu0vMvwOwc3tbxkVLUvWdGFZSxGPhN/K+YC9pbdK55eQ5va/kjpajbKrfqKyCjL8DDSrmn/byusdUR+yiOD2BACi2CGH0vYE+MFrJbzmTgKZelr3Zzd2n8k7RaqyV8AFN0egZC5Ar23B8lYE9Zs5UMjb60ROnmztQhjfjxlvFhMV8nbjnAt5czchmz5Z3nZBm2BoKoZYYZLYmQVW2Ij5yi7vgmDajqQBKXfAjYJ5h/UnMvxWCNGHwALzoDtuUVdZEJ8nHJGgkLvsDXLUNPi5Rba4gP4AVnSGLMcjMor91MkTNLTZDRDuCslDXzhD1LoOcXkF2PxcdxwFJgS2DUd8ADwAUWKnP4F7oa6F1gZkaJbnNGywsYUW0qfzijPgiM2umM8m3nkGoso9XWCWbIXaE1mz1mIvYz2BAfkUKWOpdJyKLRg8CjejZg35ylCLhQ7mShfG7BPdQa4qOgwJnAjXaF7/oNVF5clMM3TZgxuqYJvfUofDRDut3YJAWLc9ZZaF+ndWua0FPtSP8RKLFy2+iUnDU3uUg4pQkdgy3jI0KJbc5oesb8AgUB6xrPaFJHra34yHCZXcLK/5og4EjgC21iU1ajFKGn3jF8SMEhUrAjZe4A9Sq4oLA2vPbsFXycIAXDwfgEB27D0MmuOHy29PzRiIBzk80F7pa4wqfAoRqf4wrS52KNoaT7qyulZJUbs4vppKyZk9KXJJixi7tJETrqHcWHlNidldEdQZj93S7bMniOcZHu5TxjKOt+F7hHSux7xmUCtZUplzTgmyG3Sy4f9s9YN9hxfEjRGilaoT6ctN4jg3e6enRU7qR9F6l1HB9S5P/rwOjOgvwD7m5sY2gMZX3/cCeKKuBxTciwpPmRC9UHlv79w12yrS+a6AI5Rzhj7JNCf9nfPzboYq2/TTf5W9ybua0UfHSC7Dui60hHS8FHp0j127DDXm/+f0kMyZg3dUVVCB//AhSiD6ShT66eAAAAAElFTkSuQmCC">
             </button>
@@ -120,7 +120,7 @@
                             <a href="https://github.com/Raizen014/Working-Calculator" class="buttons" target="blank">Source Code</a>
                         </div>
                     </div>
-                </div>    
+                </div>
             </div>
             
         </section>
@@ -131,12 +131,19 @@
             </div>
             <div class="container">
                 <div class="contactDiv">
-                    <form id="contactForm" action="none">
-                        <input type="text" id="name" name="name" placeholder="Full Name">
-                        <input type="email" id="email" name="email" placeholder="Email Address">
-                        <textarea name="message" id="message" cols="30" rows="10"></textarea>
-                        <button type="submit" class="submit_btn">Send Message!</button>
-                    </form>
+                    <div class="leftDiv">
+                        <h1>Send me a message!</h1>
+                        <form id="contactForm" action="none">
+                            <input type="text" id="fname" name="name" placeholder="Name">
+                            <input type="email" id="email" name="email" placeholder="Email Address">
+                            <textarea name="message" id="fmessage" placeholder="Write a message..." cols="30" rows="10"></textarea>
+                            <button type="submit" class="submit_btn">Send Message!</button>
+                        </form>
+                    </div>
+                    <div class="rightDiv">
+                        <h1><textarea name="" id="" cols="30" rows="10"></textarea></h1>
+
+                    </div>
                 </div>
 
             </div>
@@ -170,10 +177,14 @@
                 });
             });
 
-            function toggleMenu() {
-            var nav = document.querySelector('nav ul');
-            nav.classList.toggle('active');
-        }
+            function scrollToSection(sectionId) {
+            var section = document.getElementById(sectionId);
+                if (section) {
+                    section.scrollIntoView({ behavior: 'smooth' });
+                }
+            }
+
+
         </script>
     </body>
 </html>
