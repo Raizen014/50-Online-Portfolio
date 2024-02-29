@@ -1,3 +1,4 @@
+
 #projects {
     height: fit-content;
     background-color: #1f1f1f ;
@@ -176,7 +177,7 @@
     
 } 
 
-@media (max-width: 768px) {
+@media  (max-width: 768px) {
 
     #projects {
         display: flex;
@@ -199,6 +200,7 @@
         left: 0;
         font-size: 2.2em;
     }
+    
     
     .proj {
         display: flex;
@@ -231,8 +233,10 @@
         text-transform: uppercase;
     }
     
+    
     .projbtn {
         gap: 30px;
+    
     }
     
     #projects .projbtn .buttons  {
@@ -241,6 +245,51 @@
         font-family: "Raleway";
         font-weight: 600;
         font-size: 0.8em;
+    }
+
+
+
+}
+
+@media  (max-width: 634px) {
+
+    #projects {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    #projects .Ttext {
+        font-size: 2em;
+    }
+    
+    
+    .proj {
+        align-items: center;
+
+    }
+    
+    .works {
+        filter: brightness(90%);
+        border-radius: 15px;
+        width: 250px;
+        border: 2px solid transparent;
+        padding: 2px;
+    }
+
+    
+    .projtitle {
+
+        font-size: 0.8em;
+    }
+    
+    #projects .projbtn .buttons  {
+        width: 90px;
+        height: 30px;
+        font-family: "Raleway";
+        font-weight: 600;
+        font-size: 0.7em;
     }
     
 }
