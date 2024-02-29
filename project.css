@@ -3,9 +3,7 @@
     height: fit-content;
     background-color: #1f1f1f ;
     color:white;
-
 }
-
 
 #projects .container {
     display: flex;
@@ -15,7 +13,6 @@
     padding: 30px 150px;
     gap: 10px;
     margin: 180px 0;
-
 }
 
 #projects .Ttext {
@@ -27,8 +24,7 @@
     font-family: "Raleway";
     font-weight: 800;
     width: min-content;
-    color:rgb(240, 237, 207);
-
+    color:rgb(240, 237, 207)
 }
 
 #projects .Ttext:hover {
@@ -49,8 +45,6 @@
     width: 750px;
     border: 2px solid transparent;
     padding: 2px;
-
-
 }
 
 .projbar {
@@ -58,8 +52,6 @@
     align-items: center;
     justify-content: space-between;
     padding: 25px 10px;
-
-
 }
 
 .projtitle {
@@ -104,10 +96,4 @@
     transition: ease 0.2s;
     transform: scale(1.050);
     
-}
-
-
-
-@media only screen and (width <= 600px) {
-
 }
