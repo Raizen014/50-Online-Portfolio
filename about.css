@@ -260,7 +260,7 @@
 @media  (max-width: 634px) {
 
     #aboutDiv {
-        padding: 60px 25px 110px;
+        padding: 60px 15px 110px;
     }
     
     #aboutDiv .container {
@@ -279,7 +279,7 @@
     }
     #aboutDiv .container .rightDiv  {
         width: 100%;
-        padding: 50px 30px;
+        padding: 50px 10px;
     }
     
     #aboutDiv .container .rightDiv h1 {
@@ -289,7 +289,7 @@
     }
     
     #aboutDiv .container .rightDiv p {
-        font-size: 0.6em;
+        font-size: 0.3em;
 
     }
     #aboutMe {
@@ -301,8 +301,35 @@
         display: flex;
         align-items: center;
         justify-content: center;
-        gap: 10px;
+        gap: 6px;
         margin-top: 60px;
     
     }
+
+
+    .downloadbtn{
+
+        margin-top: 50px;
+
+    }
+
+    .downloadCv {
+        background-color: black;
+        width: 260px;
+        height: 60px;
+        border-radius: 8px;
+        cursor: pointer;
+        border: none;
+    }
+
+    .downloadCv a{
+        color: white;
+        font-family: "Raleway";
+        font-weight: 800;
+        font-size: 1.6em;
+        letter-spacing: 0.08em;
+        border: none;
+        text-decoration: none;
+    }
+        
 }
