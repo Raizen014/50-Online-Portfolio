@@ -273,7 +273,7 @@
     .works {
         filter: brightness(90%);
         border-radius: 15px;
-        width: 250px;
+        width: 330px;
         border: 2px solid transparent;
         padding: 2px;
     }
