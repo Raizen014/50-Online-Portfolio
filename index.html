@@ -2,35 +2,48 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="icon" href="resources/icon.png">
-    <title>Aeron Garcia</title>
-    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+    <link href="https://fonts.googleapis.com/css2?family=Kaushan+Script&family=Oswald:wght@500&family=Raleway:wght@400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style1.css">
     <link rel="stylesheet" href="home.css">
     <link rel="stylesheet" href="about.css">
-    <link rel="stylesheet" href="project.css">
-    <link rel="stylesheet" href="contact.css">
-    <link href="https://fonts.googleapis.com/css2?family=Kaushan+Script&family=Oswald:wght@500&family=Raleway:wght@400&display=swap" rel="stylesheet">
 
 </head>
-    <body>
-
-        <header id="headbar" class="headbar">
-            <div class="logo" class="headbar" onclick="scrollToSection('home')"></div>
-            <nav>
-                <ul>
-                    <li><a class="headbar" onclick="scrollToSection('home')">Home</a></li>
-                    <li><a class="headbar" onclick="scrollToSection('about')">About</a></li>
-                    <li><a class="headbar" onclick="scrollToSection('projects')">Projects</a></li>
-                    <li><a class="headbar" onclick="scrollToSection('contact')">Contact</a></li>
-                </ul>
-            </nav>
+<body>
+    
+    <nav id="headbar" class="headbar">
+        <ul class="sidebar">
+            <label onclick="hideSidebar()"><svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="30" height="30" viewBox="0,0,256,256"
+                style="fill:#000000;">
+                <g fill="#0fdcf5" fill-rule="nonzero" stroke="none" stroke-width="1" stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="10" stroke-dasharray="" stroke-dashoffset="0" font-family="none" font-weight="none" font-size="none" text-anchor="none" style="mix-blend-mode: normal"><g transform="scale(8.53333,8.53333)"><path d="M7,4c-0.25587,0 -0.51203,0.09747 -0.70703,0.29297l-2,2c-0.391,0.391 -0.391,1.02406 0,1.41406l7.29297,7.29297l-7.29297,7.29297c-0.391,0.391 -0.391,1.02406 0,1.41406l2,2c0.391,0.391 1.02406,0.391 1.41406,0l7.29297,-7.29297l7.29297,7.29297c0.39,0.391 1.02406,0.391 1.41406,0l2,-2c0.391,-0.391 0.391,-1.02406 0,-1.41406l-7.29297,-7.29297l7.29297,-7.29297c0.391,-0.39 0.391,-1.02406 0,-1.41406l-2,-2c-0.391,-0.391 -1.02406,-0.391 -1.41406,0l-7.29297,7.29297l-7.29297,-7.29297c-0.1955,-0.1955 -0.45116,-0.29297 -0.70703,-0.29297z"></path></g></g>
+                </svg></label>
+            <li><a class="headbar" onclick="scrollToSection('home')">Home</a></li>
+            <li><a class="headbar" onclick="scrollToSection('about')">About</a></li>
+            <li><a class="headbar" onclick="scrollToSection('projects')">Projects</a></li>
+            <li><a class="headbar" onclick="scrollToSection('contact')">Contact</a></li>
+        </ul>
+        <div class="logo" class="headbar" onclick="scrollToSection('home')"></div>
+        <div class="navbtn">
+            <ul>
+                <li><a onclick="scrollToSection('home')">Home</a></li>
+                <li><a onclick="scrollToSection('about')">About</a></li>
+                <li><a onclick="scrollToSection('projects')">Projects</a></li>
+                <li><a onclick="scrollToSection('contact')">Contact</a></li>
+            </ul>
             <button id="message" onclick="scrollToSection('contact')">
                 Message Me!
                 <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADIAAAAyCAYAAAAeP4ixAAAACXBIWXMAAAsTAAALEwEAmpwYAAAEy0lEQVR4nNWaa4hVVRTH73XMrEymrCyrUbM0bCyLjKCSComgFwWBQQRFTX241Ud7EAhBWJ+SEJI+GBWVXYMeEkVmWUlvsLGH0IPS7GXZ++XU/GLh/9Byd865+9zHuXcWDDNn773W2muf9V+PfaZSGcMEXAy8D7xaGYsEnA5s5D/aXhlLBMwFnnAGjOr3I5WxQMDhwEpgRBvfCSwB1ur5ukovEzBJG/5ZG/5LBh0MVIFvNH5spRcJ2AsYchv9B3gMOMqtGdTcV2ZUpZeI3ad8KfCxw8HzwIkpa2s9iQ9gEfCOM+At4Oyc9fWewodc5GlnwOdyq3E5PL2DD/N34GEXQr8FrgcmBOvGA3sHY93HB3AQcLcikNGvwO3A5JS1RwObLeF5Y7qKD2A/4FbgJ23CcsK9wGEZ689RvkBlSF9X8WG+DlyhU/WRaF4Oz5BLfn8C87uKD0WiYWfAa8DCnPUTgVXsSTd0DR/AqcAGt5kPlR+qDcqQNwIjngl5SsGHvWpl4CQSbZebjG/Ad5pO2NPXwNSUtZ3Dh07zPuBvKfkRuAXYN4L3WhfBfnAlyaKUtVWF6fbiI6Wo26WibmoEr+WHZe4N3A9s1d/LMnjai4+Uom5ULjWrQC5ZL94/FNUsORq9HSbFtuMjp6g7qYCM+cBn4t0GLACu0vMvwOwc3tbxkVLUvWdGFZSxGPhN/K+YC9pbdK55eQ5va/kjpajbKrfqKyCjL8DDSrmn/byusdUR+yiOD2BACi2CGH0vYE+MFrJbzmTgKZelr3Zzd2n8k7RaqyV8AFN0egZC5Ar23B8lYE9Zs5UMjb60ROnmztQhjfjxlvFhMV8nbjnAt5czchmz5Z3nZBm2BoKoZYYZLYmQVW2Ij5yi7vgmDajqQBKXfAjYJ5h/UnMvxWCNGHwALzoDtuUVdZEJ8nHJGgkLvsDXLUNPi5Rba4gP4AVnSGLMcjMor91MkTNLTZDRDuCslDXzhD1LoOcXkF2PxcdxwFJgS2DUd8ADwAUWKnP4F7oa6F1gZkaJbnNGywsYUW0qfzijPgiM2umM8m3nkGoso9XWCWbIXaE1mz1mIvYz2BAfkUKWOpdJyKLRg8CjejZg35ylCLhQ7mShfG7BPdQa4qOgwJnAjXaF7/oNVF5clMM3TZgxuqYJvfUofDRDut3YJAWLc9ZZaF+ndWua0FPtSP8RKLFy2+iUnDU3uUg4pQkdgy3jI0KJbc5oesb8AgUB6xrPaFJHra34yHCZXcLK/5og4EjgC21iU1ajFKGn3jF8SMEhUrAjZe4A9Sq4oLA2vPbsFXycIAXDwfgEB27D0MmuOHy29PzRiIBzk80F7pa4wqfAoRqf4wrS52KNoaT7qyulZJUbs4vppKyZk9KXJJixi7tJETrqHcWHlNidldEdQZj93S7bMniOcZHu5TxjKOt+F7hHSux7xmUCtZUplzTgmyG3Sy4f9s9YN9hxfEjRGilaoT6ctN4jg3e6enRU7qR9F6l1HB9S5P/rwOjOgvwD7m5sY2gMZX3/cCeKKuBxTciwpPmRC9UHlv79w12yrS+a6AI5Rzhj7JNCf9nfPzboYq2/TTf5W9ybua0UfHSC7Dui60hHS8FHp0j127DDXm/+f0kMyZg3dUVVCB//AhSiD6ShT66eAAAAAElFTkSuQmCC">
             </button>
-        </header>
+        </div>
+        <label onclick="showSidebar()" class="menu_btn"><svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="30" height="30" viewBox="0,0,256,256"
+            style="fill:#000000;">
+            <g fill="#0fdcf5" fill-rule="nonzero" stroke="none" stroke-width="1" stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="10" stroke-dasharray="" stroke-dashoffset="0" font-family="none" font-weight="none" font-size="none" text-anchor="none" style="mix-blend-mode: normal"><g transform="scale(5.12,5.12)"><path d="M0,7.5v5h50v-5zM0,22.5v5h50v-5zM0,37.5v5h50v-5z"></path></g></g>
+            </svg>
+        </label>
+    </nav>
+
+
 
         <section id="home">
             <div class="container">
@@ -51,8 +64,6 @@
                 </div>
             </div>
         </section>
-
-
 
         <section id="about">
             <div class="Ttext">
@@ -94,110 +105,19 @@
 
         </section>
 
-        <section id="projects">
-            <div class="Ttext">
-                <h1>Portfolio</h1>
-            </div>
-            <div class="container">
-                <div class="proj">
-                    <img class="works" src="resources/TaraKape.png" alt="">
-                    <div class="projbar">
-                        <div class="projtitle">
-                            <h3>Tara Kape Website</h3>
-                        </div>
-                        <div class="projbtn">
-                            <a href="https://raizen014.github.io/Responsive_Landing_Page/" class="buttons" target="window">Live Demo</a>
-                            <a href="https://github.com/Raizen014/Responsive_Landing_Page" class="buttons" target="window">Source Code</a>
-                        </div>
-                    </div>
-                </div>
-                <div class="proj">
-                    <img class="works"id="p2" src="resources/ColorChanger.png" alt="">
-                    <div class="projbar">
-                        <div class="projtitle">
-                            <h3>Color Changer</h3>
-                        </div>
-                        
-                        <div class="projbtn">
-                            <a href="https://raizen014.github.io/HandsOn2-colorChanger-WS101/" class="buttons" target="blank">Live Demo</a>
-                            <a href="https://github.com/Raizen014/HandsOn2-colorChanger-WS101" class="buttons" target="blank">Source Code</a>
-                        </div>
-                    </div>
-                </div>
-                <div class="proj">
-                    <img class="works" style="filter: brightness(70%);" src="resources/ToDoList.png" alt="">
-                    <div class="projbar">
-                        <div class="projtitle">
-                            <h3>Todo List</h3>
-                        </div>
-                        <div class="projbtn">
-                            <a href="https://raizen014.github.io/Todo-list-app/" class="buttons" target="blank">Live Demo</a>
-                            <a href="https://github.com/Raizen014/Todo-list-app" class="buttons" target="blank">Source Code</a>
-                        </div>
-                    </div>
-                </div>
-                <div class="proj">
-                    <img class="works" src="resources/WorkingCalculator.png" alt="">
-                    <div class="projbar">
-                        <div class="projtitle">
-                            <h3>Working Calculator</h3>
-                        </div>
-                        <div class="projbtn">
-                            <a href="https://raizen014.github.io/Working-Calculator/" class="buttons" target="blank">Live Demo</a>
-                            <a href="https://github.com/Raizen014/Working-Calculator" class="buttons" target="blank">Source Code</a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            
-        </section>
 
-        <section id="contact">
-            <div class="Ttext">
-                <h1>Contact</h1>
-            </div>
-            <div class="container">
-                <div class="contactDiv">
-                    <div class="leftDiv">
-                        <h1>Send me a message!</h1>
-                        <form id="contactForm" action="#">
-                            <input type="text" id="fname" name="name" placeholder="Name">
-                            <input type="email" id="email" name="email" placeholder="Email Address">
-                            <textarea name="message" id="fmessage" placeholder="Write a message..." cols="30" rows="10"></textarea>
-                            <button type="submit" onclick="sendMessage()" class="submit_btn">Send Message!</button>
-                        </form>
-                    </div>
 
-                    <div class="rightDiv">
-                        <h1>Contact Me</h1>
-                        <p>Open for any suggestions or just to have a chat</p>
-                        <div class="contact_info">
-                            <div class="contact_links">
-                                <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACMAAAAjCAYAAAAe2bNZAAAACXBIWXMAAAsTAAALEwEAmpwYAAACNklEQVR4nO2UvWtUQRDAN6JR0EYttBQVsfCjtFC0sFFQBEkZIQhaiJ34NyhJoRb6FyikstaAnBA/CNybeYarxGhAQ3K52Zl5ZwxGiCvPgyMcty+Xfe/lmvxg2WZn97c7O2PMFiWiOr3X9Avm6LwQPlOCGSFYUYsunYXwixA+ZY7PlS7RbFSPi8WJ9PD1hhC8ShbjY6WIJBYuK6H2ItIe/9dHlwoVaVo8KwS/NyTSfiH8wwwXChFJkqn9QrgYItIWsrCgWtuXW0YtPMojsiZlY7lE6vXaHrW4nPFJV9TCSyF80JpbleUZv+bn493BMkIw5N8cvjN/Orl2PXN0Si388MvH14NllHDMt3HC8ZVuMczxVX+qYDRYRghfeDZedq6yvVuMc25ACdiT1uc5ZGDcc0NOD/XFqcU5j8x4sIwSjPqenBlOd4uxNj6RkaaHwTJC8c2MZvahszrS6hOLHzNiRoJllupTB4VgNeOmM2LxljSii2rxthJ8zWgDqz8Xpg8Ey6QI4fsimp4QvDN5EcKRImSSRnQjt4xz1R1pg8spM+dcbTC3TIpYvJ8rRRbumaJw3yq7lHA2SIZwNo03RZIwDgf9FcZhUzTOuQGx8HpjMvAmq1PnQgQPqYVmjyJLqtUjpkyU8G5PMgx3TNk457Yp4dt1XqVSWno60Xp0VC0mnupR1enDZjPhBlwTgr9d2v6Q6Qdi8UmHzGPTL5yrDSrBZCs9MFlYyw8X+rwzofhMOvdVZAuzSfwDvkLGdyvrOWoAAAAASUVORK5CYII=">
-                                <h3><strong>Address:&nbsp;</strong>&nbsp;Purok Sta. Teresa, Mayao Parada, Lucena City</h3>
-                            </div>
 
-                            <div class="contact_links">
-                                <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB4AAAAeCAYAAAA7MK6iAAAACXBIWXMAAAsTAAALEwEAmpwYAAABxElEQVR4nM2WT0uUURTGb+CiNiJhIoZLCzcR5AdQBA1y14fIr9A22rUxaNGmxI8gLSUUBVHsnjOStBWGwcp7zpzzvhU1IHPjMuSfmPvO4Pte8YGz/nEfnvOca8x1E/Pn8R9fayNXBqzXt28p44oQtIWgpVybTw51zo4J454y+rOBhggOJYPm+adhYfxyEXoKf58E6r2/oYQb3aH/xj6uHJwd1+4VQ9ErQZ1oZ7Bym7UXmNELwVtTtZSh0Qf8V+VgYXjTh92b1YMFH4bdLQJnTXxSOThICD4UgNdMKuVkJztt1RW8ZFJKGF5GEt0Wsk+Tgb1fHwghisBbSjiXDP7z++6oMB5F6jNXZ6eSwcXZWSE86f5ydOrso2RwZbtYkPJMHE6ngxM8j1Yo4+/zgcuatQUl2BKCP6FeS3e7Er4q6O9QOkthz7sdllIfCd85m1F4j8PSVoZ3pT4TwfZetRofaJRaRWV8Fkt7H69v5TncuTRcHM4Iw7fL2E6Ed03Zj2Gs4QrsXjZV1aswvig4LOdWD3b84fpNU6Uyt39fGVejwSM4CDVsUqnZtA+E8XVnf0/t/ah6cDsZ9H8FWHYME6EDrgzaj/4CJyvzEq4eCjkAAAAASUVORK5CYII=">
-                                <h3><strong>Phone:&nbsp;</strong>&nbsp;+639 560 349 990</h3>
-                            </div>
 
-                            <div class="contact_links">
-                                <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB4AAAAeCAYAAAA7MK6iAAAACXBIWXMAAAsTAAALEwEAmpwYAAACUUlEQVR4nO2WPWgUQRTH5zSBNCJYKAqKCBaiiB/xCyuxsRIsBBFipyksxN7CwlJBSyNYKLFIIyLYWBxaCMrOe+f5VQQMKmLIvLfvXRIMYnRkk7vc3tdm9y53IOQPU+zszvz2fc4Ys6pVraCY320tOTukzg6abso5u0UZzyrBXWH8oIxeCJ1zn9atKEi1uCMkuBCBlOBzBKofQni1Y9A02V3KOCyEo8r4vRlICQtCOL/4DN/8RH6gLYuU8ZIwPlCCr01B1fFc2Z4TxvElaxkvZgIp41gUm2VAVSDhYebCnrgXhHHc+6C/AeL92Fpm3B0DUUpQFejgULRXiYKjQsA170M4Xwf0a5ThvhJqRpAXgr/K8FiksL+y30JyMf6sjTMUI05jkjAeF4JfWYBC8DRej1GJCMHDZt+Hzp5uHU+HlzMAD9autYPxJKpZw/jGe59LTiaCkRbAPxFQpt4eqAtTLiS4kuQtcfZkInRxo6BfCV42AGMxrGjmR2GjED5L9BLhC5NWs1PB5qUyILzW1DNsTwnD5HKhKbE9lhocSQlulcE3TUze5/uE8XrkiRRJ+MRklTIOl/vqo8qcCG4Xwleps15wX2awODwRj1H5hJH05Vb94XaOM6+EX1rVZgL0d2kKdrYF9t7nlGE6aycrd6kR04mUwZYtmBeG10p4TxjnEq1lnItuGR2BS84ORa0uDIP1lbkwtHuF8WMC/LbplvxEfkAY7zRCYXZmsrjJdFtCeCZ+9AnDDdMrhWGwbaHFRqWm7zeYXsr7fF+JCkd6CjX/o/4BVrOfvORyYwoAAAAASUVORK5CYII=">
-                                <h3><strong>Email:&nbsp;</strong>&nbsp;aerong2002@gmail
-                                    .com</h3>
-                            </div>
 
-                            <div class="contact_links">
-                                <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB4AAAAeCAYAAAA7MK6iAAAACXBIWXMAAAsTAAALEwEAmpwYAAADL0lEQVR4nM2XSWgUURCGBxX3/eDFDRQFd2/e9eRCEBE9etODglevCqLGLSiIIrhExSAKrhfBhSBxm6nqaHBDUSNxSLrqVXVi4hZtebPE7qRnumeI4IN3GareV6/qr+o3qdT/vrJZZ4xnnDVCuEcZrijDHWG8LQQNwrjLY1hlbQYN2EkwXxnPKsMXZfRjticEx1Wfzaoa2NaWHi2MR4TwpzJeVcYNynBKGOuV8KQSfrQgJTjoMawUghvFAITxq82C77cMrwjK/Hy6EjzPHULQEGXj+/4Qm14hYCX8IATn+mdAGB4T4dQKoLnb9B1Qzt6YzGIh7CiVfiF8S9Q8LTa9xZsGdndcsHFwZci0tjaNKnmAMByNcDqcADxTGB+WFx4cinRmxgVC2BvhtLkcVFxcqwydMdAuK9JOysyLuC3Wl3AsCRZy1gnhj9g2I3gnhLdsV4QOIHo0Xhl7IsXBuDNo6/tvRtiaegZXJ4LmBdZr3EyNZbS3t4wNRV4m2painRJuU0ItHOYmgRa3R84yK0DL6gPbwpdzsvXPg+FEJbB+e0tuEBHUBm4MN2NqtLcIFoJfdjLlf0dHCC8IQ3tsuhlfCONuJbgeBD+IFwjet61lTPMiZUz/rR/8LtENEXB4ZFkBMDYlTZkwfraCUwM77O2VoDFXAoJaJcAECm8M1BivVVozYXxqCDYFFa/6bJISHiivdrjy18FGW41gXNwa2d+us1wIL+Y+IANvXBus8fpqwKmYVdBDyMe4mZo+A9d9Oa5PqRXsuE9e4RER9OkxJj0hZKSMZyoFG4Lt5cDKcLpffU9HRJeZV3htVALvsa+R0BgMjNbilMu3HfYaA0uiI6xSZOJmVgTP8TpgjjJeDtkQHiuZGv/9vZHB4ZBwt/n+paGBktm3WVe49eC1CE5M8t56lxhMsC+f2nvDlHC/nWT9+j3rdThzU0mWMekZiaYQo2+V25V1pijD3QElYHitmp6dCBp6fzHWlZvD9hVpP3fK8Clcz9woPRElusSL2VkoBOeF4FsEvFsYXgWA33P/LASXpgZrGZOeoOxszGcBbgjjE3vjwie1LicqbZk8aMB/tf4A34GlAvFUSw8AAAAASUVORK5CYII=">
-                                <h3>Website:&nbsp;&nbsp;https://github.com/
-                                    Raizen014</h3>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
+
+
+
+
+
+
+
+
 
         <footer>
             <div class="footer">
@@ -223,36 +143,47 @@
         </footer>
 
 
-        
-        <script>
+    <script>
             
-            document.addEventListener("DOMContentLoaded", function () {
-            const navbar = document.getElementById("headbar");
+        document.addEventListener("DOMContentLoaded", function () {
+        const navbar = document.getElementById("headbar");
 
-            window.addEventListener("scroll", function () {
-                if (window.scrollY > 350) {
-                    navbar.style.backgroundColor = "#111";
-                    navbar.style.borderBottomColor = "#222";
-                } else {
-                    navbar.style.backgroundColor = "transparent";
-                    navbar.style.borderBottomColor = "transparent";
+        window.addEventListener("scroll", function () {
+            if (window.scrollY > 100) {
+                navbar.style.backgroundColor = "#111";
+                navbar.style.borderBottomColor = "#222";
+            } else {
+                navbar.style.backgroundColor = "transparent";
+                navbar.style.borderBottomColor = "transparent";
 
-                }
-                });
+            }
             });
+        });
 
-            function scrollToSection(sectionId) {
+        function scrollToSection(sectionId) {
             var section = document.getElementById(sectionId);
                 if (section) {
                     section.scrollIntoView({ behavior: 'smooth' });
                 }
             }
 
-            function sendMessage() {
-                alert("Your message has been sent");
-            }
+        function sendMessage() {
+            alert("Your message has been sent");
+        }
+
+        function showSidebar() {
+            const sidebar = document.querySelector('.sidebar')
+            sidebar.style.display = 'flex'
+        }
+        function hideSidebar() {
+            const sidebar = document.querySelector('.sidebar')
+            sidebar.style.display = 'none'
+        }
 
 
-        </script>
-    </body>
+    </script>
+    
+
+    
+</body>
 </html>
