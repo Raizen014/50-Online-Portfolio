@@ -8,7 +8,9 @@
     <title>Aeron Garcia</title>
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="home.css">
+    <link rel="stylesheet" href="about.css">
     <link rel="stylesheet" href="project.css">
+    <link rel="stylesheet" href="contact.css">
     <link href="https://fonts.googleapis.com/css2?family=Kaushan+Script&family=Oswald:wght@500&family=Raleway:wght@400&display=swap" rel="stylesheet">
 
 </head>
@@ -57,15 +59,40 @@
                 <h1>About Me</h1>
             </div>
             <div id="aboutDiv">
-                <h1>WORK IN PROGRESS...</h1>
+                <div class="container">
+                    <div class="leftDiv">
+                        <img id="aboutMe" src="resources/aboutMe.png" alt="">   
+
+                    </div>
+
+                    <div class="rightDiv">
+                        <h1>Hello, I'm <span>Aeron Garcia</span>, an IT student pursuing a 
+                            degree at Dalubhasaan ng Lungsod ng Lucena. Specializing in UI/UX design.
+                        </h1>
+                        <p>My academic journey has been enriched with projects that showcase my ability 
+                           to bridge IT functionality with innovative design. With a solid foundation in 
+                           programming languages and hands-on experience in Web developing, I strive to 
+                           contribute to the evolving IT landscape. Explore my portfolio for a glimpse 
+                           my creativity, attention to detail, and commitment to delivering exceptional 
+                           user experiences. Connect with me via aerong2002@gmail.com for collaborations 
+                           and discussions. Looking forward to connecting with fellow enthusiasts and 
+                           professionals!
+                        </p>
+                        <div class="aboutIcons">
+                            <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAFAAAABQCAYAAACOEfKtAAAACXBIWXMAAAsTAAALEwEAmpwYAAAF+ElEQVR4nO3cf0xVZRgH8CdtTS3DP6p/yNZmf/Vja+E/uVqrWaNN5X3BCwSoFIiUhpssaK1AtzTLtDmdzUnGtB8b1LRco2guLGtpTa0oLWMq3POee7k/oASUn087QNbGe7jnvZz3OXk7z/ZszO1yz/nsOT/fLwL45Zdffvnll19++eVXghIMMgwODancgkGGtkEIZsECwQFTuYMM7tcG2L4Y7vB6B4XmDjOYpw0wsgRmpzxgAG4AnSUY9Hm9k0JXM+gD3WUwOE+5U5dK9fTF4onfZXA4px+QwzFKQHxWT19eKQX8Vjug4PBxKgD2lUgP4Y8oAOtSAbBHcggLBnv0AzLYmAqAfy6XHsIvawc0GKxNBcDuQilghXbAIIf8VACMPTHxu4LZkKcd0OTwSCoARnInfpeZDQ/rB8yBu5QQCmZjaGNW0o17A8n3i+m2gOGlkm1dAndqBxQBuFkF0Cydi/F4POmeUu1caAtoZkvOgYvgJu2AWAvTDA6DjgEL07wD3HyvFG9ktfQCMmjtG1CUwcB0PIXZ0zAei3kDWDNXCjj4tASQgQCqEgx+UDmM46LdG8DKWVLA/lWS7WRwihKwWQUw1tZKDzhwyfb8Z71MkGznZ2SABof9SoCt39ADdnXYAvY+JT2E91ECblUBjB5vkgOdP6PvNmZXpi3gxRVSwNcpAauVAI80SAFjF84m/KyOm+g/lkkAs6CKDNDMgmIVwMindfIJjEZGr9LUgPEC6UVkBRmgYPC4EuCBbbbnOLNoDjlgNF/6XZmUgBkqgJ3vrrcFDJXPIwfslDwHGxzuIwPs4HCrEmDdOvsJrJxPDhjKmfg97QFIJwNsDcB1BocRp4DhHaX2E1j7GC3gGun0jVj7BJQlOHQ5Bnwtl/4+cPciKeDQM9JtjJPijQOecQy4IZMe8I0HpIAD8se40+SABoMjTgFD1QvoAV+5R2U5s8ULwEbHgBV30wPavImRLWdaqSwvAHc6BTRX3kYP+NyNUsCeJ6XbuIMcUDCocQxYNIcWcGQYseIax8uZgsNLXgCWO74XzJmO0ea3k2o80WDf3UE5YF+X7W1MV5F0G1eRAxocuGPAKfSk93Snm+WAsXNKy5lGFjByQKq0Kk4GeOE7OWDwpNJyptZUqtdpVZwMMPK7HPBsi9JyptZUqltp1eiJw/J3gr+dSh6wNyYH/PGg7WdML1KpbqRVo199IL/Smh3JAVpX2eEhOeCxeulnRtZ4lEp1I60aadpje6sicmeoA1aloW21bHe+nEmRSnUjrdrZ+Kr9K62SdHXA2tvtAZs2SD/TX+ZRKtWNtGpn/fO2gNGvD2J4a8FoiiEhYNUcxHeKEX89bA94oNL5ciZFKtWNtGrnrvKETx2xsInRL97H8Jb80VDSFcB1MxF3L0Y8vg+xvxcT1nsljpczSVKpbqRVw6rvBMMCo5/XI55sRBzoQ6V6a6nz5UyKVKobadVQzaN0z8I2qazuZR6lUt1Iq5qVGXSAW+Y7Xs4kSaW6klbNnYHhbUUY/bIR45Gw+4BDA4i/NI2d/6xzpgQwmudRKtW1tCof3+jCtNELhXXBsC4cSQNaN9JtRxE/XIv4wi2JlzMDHqVS3UqrClnnzRxdM4l88ibGzWBiQCt19dMhxP3Lx26mE6AlWs4kSaW6lVYVTg7zK5gd/wD+G83mTbOT9jSV6kpalSt0/iwMbWKIe3MRK69PGm2y5UzSVKpbaVWh2FOF+7sHyj1OpbqVVhUeAV4u8ziV6lZaVRADWgvp1hOINFBEmUp1K60qNAMOrx57aWA9dUj/mMarVKpbaVWhAXB0yooBY1buT/IHNLaAlKlUt9KqwgVAlSmbtClTqXaFAZg+/h/yVAsGR1VibyqAyU7ZhKnj8LNgsDmYDQvJI21On05MDgHrBG3FxqYK2FUIGJrClBkcegwOhwSDMisYCldToebpvGqn7L8ynSIVpsyF6VwvOHyvOp0GgzbBYHvKTZmu6fxfTlmyhQ/BtUYWPCg4bLLa+tn6t6R/oV9++eWXX3755ZdffoG79Rch+zNEL2EykAAAAABJRU5ErkJggg==">
+                            <img src="data:image/png;base64,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">
+                            <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAFAAAABQCAYAAACOEfKtAAAACXBIWXMAAAsTAAALEwEAmpwYAAAEKElEQVR4nO2aW4xTVRSG285MO9NpZzq9zLSlrQQIYLiEaAjhYUIARZCMEQTCTUwEEkgIvgEhxhhA7gpeZqIIDhfBBEHIcAkgwgQE5IGi3GHA/QCEoDEmqJzHn+xjh3R6zmlPCclpp/+frKfus9v9da291l772GwURVEURVEURVEFK0UkUEpmI8AEASr0wITlocgQFgQIq72JSUQQIKz2KJYxggBRTMZCWhAg6IHC+lBkCAsChNXexCQiCBBWexTLGEGAKCZjIS0IEPRAYX0oMoQFAcJqb2ISEQQIqz2qZMqY2+d6YGdzUGP3k7Gcz/7TkcAvB8PY3xrCD1tCONsWxt0LsdICuLM5CJvNrrH2vQ2Gz/x6PIIZEz3wuB26z740yIXWDQE8/p0AkQmvZbUflS59cJn2+ig3/rwapwcqKXjbPwvCbs8NLt3GjKjCv7cZwnjwWwyBurK84HXaqqU+7oFfrPTrwhn8ogvrPqjDl2v8eHuSBxXlXcO7cVglLp2IEuDkpmoNvL69nPj7Rtc9bt83IZSV2VFbU4bmVX7TiaTbZ+HGYZWaMfNn1ejOuXVjAOJ8D5YxShqUVxqrNADHjnQ/tz+y23vg7Gle3XEbl/kJ0GYCoBHozkRxcEc9PdCWBeCjjjh6xiuylisD+jrx1dqAOpYhvFd7lDu+u0FTpuiZBC1PLPmA7PZ7oJIy2TTwVpsrqAf2c+L84TABKhkQr7ZH1XOuGYiy4XD429z7Y8l4oJJmp/eH1VIm1/lYFtXXT2U/jZQkQCVlF3+M4N2pXricxvvjtDc9BKiYaM6OH60f2rIFlnns6xYe2LohkLcH/ncnkfWzEcO1pxZpp/aFiw/gzZ+jaHrVjZ++1weyYrFPd7HnDmgX+/ByTA3Vd6Z4s36nbCLozblnc6h4AD7qiGP5Ih/cVf/vS5GGciSPRTTjhg5x6S721pmum37btnrEIuVPP9/2adDwuz/+sE53zkNZsnFBAUwei6B/H6dmAVWVDrWDsuPzILZ8EsA4g1JElh7ywqhzvrkzvJpM66xwYNM67b3HvWQMvV/QP7FcaY8WB8B7yRh8tc/WPdbrsrw3t9Zw7MuDXVi60IePlvgwZ7pXLVn0xsneYbbfXFAAlVR5ku/9RafJa8r0uf66FlfPuc/6h0iTHeuiAqiIBNa+X5c3xKYx+j0+uSfmaiYY2YRx1Tk70wUJUBEJ7GoJwm/yMkjeoP1xxfhiXF6ay/A2C87hsGPerBpTTYWCBaik9sTFC2rVTJy5SOmhQwa68PV68xfhsvf3xmvVTzN8psl9cOZbHpxpM9dIKHiASppdPhnFge312L0ppLanzLzCYWQyU184GlGBftcSxJFd9er8+byRUHQAlQI1AhQECHqgsD4UGcKCAGG1NxVEEqEoiqIoiqIoirI9Lz0BIcT+VNwH4uQAAAAASUVORK5CYII=">
+                            <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAFAAAABQCAYAAACOEfKtAAAACXBIWXMAAAsTAAALEwEAmpwYAAAFSklEQVR4nO2bWYwURRiA/65lqnY5F4NRTIzxiiA+iD6QqBgPNDFGH1S8SNQHBUXIRmWqZlfjGiMI4gMmxgMk+uCBiy8eUZep2q7aHRYSNxITjcaARzwiCSIBr1XgN91DVnqXY6a7emboqS/5k0l2ZtL97f9Xdf1VA+BwOBwOh8PhcNSLfGkS5OVFhKtbiZBdHlcrPS5f9oR63eNqQ/m1XEEK8n4QxSugMDC1uf9Z3f64Fi6v87haR4T8nHB1gAiFlYc8GHzOE/JJ6DLToZkgXN5OhPyuOmHHlLk3zMxmwBPqCXviouFxtRwyjVCXl0svHYFBtIi+myGreEK+naa8MLjaAQuHcpBFCFc/pi4wyMK8vBIyR7c/LlK+XA0TLhdBh98OnfJ8T0hpUeJjkDnypUmRAV+oVZG/i+IUItQeS5PJ85A5Ovz2SJlxddPotxAht1gRKORayLpAj6uVqWVgMwgkQv2d1hjYLAIxrXAChRM4FpeBCVk4lGspqPlxggh5T9wSxl6YgIb1HDE0fRU17cb+tjmQaTqqGz8jAn1oR8Pw+EH7ULGzIZN01EIgQ9R0J/q5C2rfSebqkhbRd33cEk21hKsRWI6vsQSTarGuvZcIubn6TnJtH2NiCAziqfTk8U0zwxZ8A4gi6Qnch1thsn15y/wLbS23SGMLRNRsYQrdFJv7GKrRBX5g1V+w+1VvMaRSgVw9m1hgUMYIxN6kwdWueoshlQZX9/0vkJ0TUyCiT2dY8ddSKM47geQNw8P+tBGBhl0VW6DO3dnwW5HEdvkKFXkEQc2eiS+QrbYjkKv3Tgh5XPbC0g/ZiLwhyKGh3yYQ+L4VgUSonxo/8+RaeGiw7fDrRsOWxJYXCqSbk9vrlKfUWw45WnD5lyfku9DZd+noy8YBdhZq9msygeyr5AJFcXY6N6++CHbmSL5vcdXr47y6EQp9c0Zn3Ii8QTgJNfsskbxyBu5svBmYq8Hw5lMiaEmhYV8mllcW+H3iCyKF4m125MngONrjAOhBCqAPE1HTLjTsdyvyyvFp4gsjvHi3JYEPHvXmDTsT+9nVqOn8qsLkFqChBdRsA2r2h0Vxh4JuSiywRcgbLMyQL4yRthUmo6YCNd1h/8YthaavJRYIonhZwpnyZ3ikd0JEnm6dG4wvdRd0fIEdlvp/iTJwaUReWKrsz7rLqUhg69zkArt7aHiSKp68/dDZf/KIPH/itHDf4YSQxw5Ya+0TIbfFnDg+Ofx7ULMVdRdTeWwDW3hcro83eaiNEYGGbm8AMRVmIH3UmsDgESSWQK7WRRf2bH/dxVQW+9Aff6o1gcDVrLq11k1dso+DbYiQ25tE4JuIYH+1RIQqZFzgv6jZ0/b2QY60K8fVL9kTSHehpi+hpjMhbYhQd9VMoKay6rVxpdFPb0GfzQs7N2mU67HwhFxdmwykGTyme4jgbDPhcrcTmITgVH2+uMDjao0n1FseVz2jIzxEXo8SHshdDFkDazqJZLD80Ql0ArOTgZoNo2GLwu/06QzUtNeVsKlK4qox2wOG/ebGQFPxDD3mh4po6GC2BQ7BeIslHDn0g0WYgobtOUzwi5BFULO9lgT+g5otxgGYigO5WeEzY/Q9IwcsMwVq+nGNngWXQBZBP3dHTQTq3GzIIohA0NAt6cqjJcgyaFpPR02/SUcg/QE1PReyDprx09HQj+xlHTuIhr2BpbbToJlAw65Fzd5BzXbHELcnXIFoylG1ngHNDAZjY4meF3aKDV2Ghj2Hhq4/9JveV9CwNWjYcvTZA6jZNeFprtT2LhwOh8PhcDgcDqiI/wD8maSpB7+xMQAAAABJRU5ErkJggg==">
+                        </div>
+                        <div class="downloadbtn">
+                            <button class="downloadCv"><a href="resources/resume.pdf" download="resume.pdf">Download CV</a></button>
+                        </div>
+
+                    </div>
+                </div>
             </div>
 
         </section>
-
-
-
-
-
 
         <section id="projects">
             <div class="Ttext">
@@ -133,33 +160,70 @@
                 <div class="contactDiv">
                     <div class="leftDiv">
                         <h1>Send me a message!</h1>
-                        <form id="contactForm" action="none">
+                        <form id="contactForm" action="#">
                             <input type="text" id="fname" name="name" placeholder="Name">
                             <input type="email" id="email" name="email" placeholder="Email Address">
                             <textarea name="message" id="fmessage" placeholder="Write a message..." cols="30" rows="10"></textarea>
-                            <button type="submit" class="submit_btn">Send Message!</button>
+                            <button type="submit" onclick="sendMessage()" class="submit_btn">Send Message!</button>
                         </form>
                     </div>
-                    <div class="rightDiv">
-                        <h1><textarea name="" id="" cols="30" rows="10"></textarea></h1>
 
+                    <div class="rightDiv">
+                        <h1>Contact Me</h1>
+                        <p>Open for any suggestions or just to have a chat</p>
+                        <div class="contact_info">
+                            <div class="contact_links">
+                                <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACMAAAAjCAYAAAAe2bNZAAAACXBIWXMAAAsTAAALEwEAmpwYAAACNklEQVR4nO2UvWtUQRDAN6JR0EYttBQVsfCjtFC0sFFQBEkZIQhaiJ34NyhJoRb6FyikstaAnBA/CNybeYarxGhAQ3K52Zl5ZwxGiCvPgyMcty+Xfe/lmvxg2WZn97c7O2PMFiWiOr3X9Avm6LwQPlOCGSFYUYsunYXwixA+ZY7PlS7RbFSPi8WJ9PD1hhC8ShbjY6WIJBYuK6H2ItIe/9dHlwoVaVo8KwS/NyTSfiH8wwwXChFJkqn9QrgYItIWsrCgWtuXW0YtPMojsiZlY7lE6vXaHrW4nPFJV9TCSyF80JpbleUZv+bn493BMkIw5N8cvjN/Orl2PXN0Si388MvH14NllHDMt3HC8ZVuMczxVX+qYDRYRghfeDZedq6yvVuMc25ACdiT1uc5ZGDcc0NOD/XFqcU5j8x4sIwSjPqenBlOd4uxNj6RkaaHwTJC8c2MZvahszrS6hOLHzNiRoJllupTB4VgNeOmM2LxljSii2rxthJ8zWgDqz8Xpg8Ey6QI4fsimp4QvDN5EcKRImSSRnQjt4xz1R1pg8spM+dcbTC3TIpYvJ8rRRbumaJw3yq7lHA2SIZwNo03RZIwDgf9FcZhUzTOuQGx8HpjMvAmq1PnQgQPqYVmjyJLqtUjpkyU8G5PMgx3TNk457Yp4dt1XqVSWno60Xp0VC0mnupR1enDZjPhBlwTgr9d2v6Q6Qdi8UmHzGPTL5yrDSrBZCs9MFlYyw8X+rwzofhMOvdVZAuzSfwDvkLGdyvrOWoAAAAASUVORK5CYII=">
+                                <h3><strong>Address:&nbsp;</strong>&nbsp;Purok Sta. Teresa, Mayao Parada, Lucena City</h3>
+                            </div>
+
+                            <div class="contact_links">
+                                <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB4AAAAeCAYAAAA7MK6iAAAACXBIWXMAAAsTAAALEwEAmpwYAAABxElEQVR4nM2WT0uUURTGb+CiNiJhIoZLCzcR5AdQBA1y14fIr9A22rUxaNGmxI8gLSUUBVHsnjOStBWGwcp7zpzzvhU1IHPjMuSfmPvO4Pte8YGz/nEfnvOca8x1E/Pn8R9fayNXBqzXt28p44oQtIWgpVybTw51zo4J454y+rOBhggOJYPm+adhYfxyEXoKf58E6r2/oYQb3aH/xj6uHJwd1+4VQ9ErQZ1oZ7Bym7UXmNELwVtTtZSh0Qf8V+VgYXjTh92b1YMFH4bdLQJnTXxSOThICD4UgNdMKuVkJztt1RW8ZFJKGF5GEt0Wsk+Tgb1fHwghisBbSjiXDP7z++6oMB5F6jNXZ6eSwcXZWSE86f5ydOrso2RwZbtYkPJMHE6ngxM8j1Yo4+/zgcuatQUl2BKCP6FeS3e7Er4q6O9QOkthz7sdllIfCd85m1F4j8PSVoZ3pT4TwfZetRofaJRaRWV8Fkt7H69v5TncuTRcHM4Iw7fL2E6Ed03Zj2Gs4QrsXjZV1aswvig4LOdWD3b84fpNU6Uyt39fGVejwSM4CDVsUqnZtA+E8XVnf0/t/ah6cDsZ9H8FWHYME6EDrgzaj/4CJyvzEq4eCjkAAAAASUVORK5CYII=">
+                                <h3><strong>Phone:&nbsp;</strong>&nbsp;+639 560 349 990</h3>
+                            </div>
+
+                            <div class="contact_links">
+                                <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB4AAAAeCAYAAAA7MK6iAAAACXBIWXMAAAsTAAALEwEAmpwYAAACUUlEQVR4nO2WPWgUQRTH5zSBNCJYKAqKCBaiiB/xCyuxsRIsBBFipyksxN7CwlJBSyNYKLFIIyLYWBxaCMrOe+f5VQQMKmLIvLfvXRIMYnRkk7vc3tdm9y53IOQPU+zszvz2fc4Ys6pVraCY320tOTukzg6abso5u0UZzyrBXWH8oIxeCJ1zn9atKEi1uCMkuBCBlOBzBKofQni1Y9A02V3KOCyEo8r4vRlICQtCOL/4DN/8RH6gLYuU8ZIwPlCCr01B1fFc2Z4TxvElaxkvZgIp41gUm2VAVSDhYebCnrgXhHHc+6C/AeL92Fpm3B0DUUpQFejgULRXiYKjQsA170M4Xwf0a5ThvhJqRpAXgr/K8FiksL+y30JyMf6sjTMUI05jkjAeF4JfWYBC8DRej1GJCMHDZt+Hzp5uHU+HlzMAD9autYPxJKpZw/jGe59LTiaCkRbAPxFQpt4eqAtTLiS4kuQtcfZkInRxo6BfCV42AGMxrGjmR2GjED5L9BLhC5NWs1PB5qUyILzW1DNsTwnD5HKhKbE9lhocSQlulcE3TUze5/uE8XrkiRRJ+MRklTIOl/vqo8qcCG4Xwleps15wX2awODwRj1H5hJH05Vb94XaOM6+EX1rVZgL0d2kKdrYF9t7nlGE6aycrd6kR04mUwZYtmBeG10p4TxjnEq1lnItuGR2BS84ORa0uDIP1lbkwtHuF8WMC/LbplvxEfkAY7zRCYXZmsrjJdFtCeCZ+9AnDDdMrhWGwbaHFRqWm7zeYXsr7fF+JCkd6CjX/o/4BVrOfvORyYwoAAAAASUVORK5CYII=">
+                                <h3><strong>Email:&nbsp;</strong>&nbsp;aerong2002@gmail
+                                    .com</h3>
+                            </div>
+
+                            <div class="contact_links">
+                                <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB4AAAAeCAYAAAA7MK6iAAAACXBIWXMAAAsTAAALEwEAmpwYAAADL0lEQVR4nM2XSWgUURCGBxX3/eDFDRQFd2/e9eRCEBE9etODglevCqLGLSiIIrhExSAKrhfBhSBxm6nqaHBDUSNxSLrqVXVi4hZtebPE7qRnumeI4IN3GareV6/qr+o3qdT/vrJZZ4xnnDVCuEcZrijDHWG8LQQNwrjLY1hlbQYN2EkwXxnPKsMXZfRjticEx1Wfzaoa2NaWHi2MR4TwpzJeVcYNynBKGOuV8KQSfrQgJTjoMawUghvFAITxq82C77cMrwjK/Hy6EjzPHULQEGXj+/4Qm14hYCX8IATn+mdAGB4T4dQKoLnb9B1Qzt6YzGIh7CiVfiF8S9Q8LTa9xZsGdndcsHFwZci0tjaNKnmAMByNcDqcADxTGB+WFx4cinRmxgVC2BvhtLkcVFxcqwydMdAuK9JOysyLuC3Wl3AsCRZy1gnhj9g2I3gnhLdsV4QOIHo0Xhl7IsXBuDNo6/tvRtiaegZXJ4LmBdZr3EyNZbS3t4wNRV4m2painRJuU0ItHOYmgRa3R84yK0DL6gPbwpdzsvXPg+FEJbB+e0tuEBHUBm4MN2NqtLcIFoJfdjLlf0dHCC8IQ3tsuhlfCONuJbgeBD+IFwjet61lTPMiZUz/rR/8LtENEXB4ZFkBMDYlTZkwfraCUwM77O2VoDFXAoJaJcAECm8M1BivVVozYXxqCDYFFa/6bJISHiivdrjy18FGW41gXNwa2d+us1wIL+Y+IANvXBus8fpqwKmYVdBDyMe4mZo+A9d9Oa5PqRXsuE9e4RER9OkxJj0hZKSMZyoFG4Lt5cDKcLpffU9HRJeZV3htVALvsa+R0BgMjNbilMu3HfYaA0uiI6xSZOJmVgTP8TpgjjJeDtkQHiuZGv/9vZHB4ZBwt/n+paGBktm3WVe49eC1CE5M8t56lxhMsC+f2nvDlHC/nWT9+j3rdThzU0mWMekZiaYQo2+V25V1pijD3QElYHitmp6dCBp6fzHWlZvD9hVpP3fK8Clcz9woPRElusSL2VkoBOeF4FsEvFsYXgWA33P/LASXpgZrGZOeoOxszGcBbgjjE3vjwie1LicqbZk8aMB/tf4A34GlAvFUSw8AAAAASUVORK5CYII=">
+                                <h3>Website:&nbsp;&nbsp;https://github.com/
+                                    Raizen014</h3>
+                            </div>
+                        </div>
                     </div>
                 </div>
-
             </div>
         </section>
 
         <footer>
-            <div>
-                <h1>FOOTER</h1>
+            <div class="footer">
+                <div id="up_footer">
+                    <div class="socialMedia">
+                        <a href="https://web.facebook.com/norea.aicrag.3" target="_blank"><div id="FBIcon"></div></a>
+                        <a href="https://twitter.com/AeronGarciaaa" target="_blank"><div id="TwtIcon"></div></a>
+                        <a href="https://www.instagram.com/aerongarciaaa/" target="_blank"><div id="InstIcon"></div></a>
+                    </div>
+                    <div class="footer_logo">
+                        <div class="logo" onclick="scrollToSection('home')"></div>
+                        <h4>AERON<br>GARCIA</h4>
+                    </div>
+                   
+                </div>
+                <div id="low_footer">
+                    <p>Copyright © 2024 Aeron Garcia&nbsp;&nbsp;|&nbsp;&nbsp;All Rights Reserved.</p>
+                    <button id="scrollTopButton" onclick="scrollToSection('home')">TO THE SURFACE<h4>▲</h4></button>
+                </div>
+                
+
             </div>
         </footer>
 
 
-
-
         
-
         <script>
             
             document.addEventListener("DOMContentLoaded", function () {
@@ -182,6 +246,10 @@
                 if (section) {
                     section.scrollIntoView({ behavior: 'smooth' });
                 }
+            }
+
+            function sendMessage() {
+                alert("Your message has been sent");
             }
 
 
