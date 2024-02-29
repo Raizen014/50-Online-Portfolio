@@ -204,7 +204,6 @@ textarea {
         display: flex;
         flex-direction: column;
         align-items: center;
-        height: 100vh;
         
     }
     #contact .Ttext {
@@ -215,21 +214,26 @@ textarea {
 
     
     .contactDiv {
-        height: 600px;
-        width: 450px;
+        height: 330px;
+        width: 380px;
     }
     
     
     .contactDiv .leftDiv{
         display: flex;
         width: 50%;
-        padding: 40px 15px;
+        padding: 15px;
+    }
+
+    .contactDiv .leftDiv form {
+        top: 20px;
+        gap: 10px;
     }
     
     .contactDiv .rightDiv{
         display: flex;
         width: 50%;
-        padding: 40px 15px;
+        padding: 15px;
 
     }
     
@@ -247,14 +251,42 @@ textarea {
     }
 
     .contact_links {
-        font-size: 0.6em;
+        font-size: 0.5em;
     }
 
     .submit_btn {
-        width: 120px;
-        height: 40px;
-        font-size: 0.7em;
+        width: 80px;
+        height: 30px;
+        font-size: 0.5em;
+        margin-top: 0;
 
     }
+
+    .contact_links img {
+        width: 20px;
+
+    }
+
+    input[type="text"], input[type="email"] {
+        font-size: 0.8em;
+        width: 100%;
+        height: 30px;
+        padding: 5px;
+  
+    }
+
+    textarea {
+        font-size: 0.8em;
+        width: 100%;
+        height: 120px;
+        padding: 5px;
+    }
+    
+    .contactDiv .rightDiv .contact_info {
+        display: flex;
+        flex-direction: column;
+        gap: 25px;
+        position: relative;
+        top: 25px;
 
 }
