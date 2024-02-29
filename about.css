@@ -102,11 +102,114 @@
 }
 
 
+@media (max-width: 1024px) {
+    
+}
 
+@media (max-width: 840px) {
+    
+}
 
+@media (max-width: 768px) {
 
+    #about{
+        height: 100vh;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .Ttext {
+        top: 115px;
+        left: 0px;
+        font-size: 2em;
+    }
+    
+    #aboutDiv {
+        display: flex;
+        justify-content: center;
+        align-content: center;
+        position: relative;
+        top: 120px;
+        font-size: 2.2em;
+        font-family: "Raleway";
+        padding: 60px 25px 110px;
+    }
+    
+    #aboutDiv .container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 0px;
+    }
+    
+    #aboutDiv .container .leftDiv  {
+        display: flex;
+        justify-content: center;
+        width: 50%;
+        padding: 10px;
+        height: fit-content;
+    }
+    #aboutDiv .container .rightDiv  {
+        width: 100%;
+        padding: 50px 30px;
+    }
+    
+    #aboutDiv .container .rightDiv h1 {
+        text-align: center;
+        font-size: 1em;
+        margin-bottom: 20px;
+    }
+    
+    #aboutDiv .container .rightDiv p {
+        font-size: 0.5em;
 
+    }
+    #aboutMe {
+        width: 250px;
+        
+    }
+    
+    .aboutIcons {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 50px;
+        margin-top: 60px;
+    
+    }
+    
+    .downloadbtn{
+        display: flex;
+        justify-content: center;
+        margin-top: 50px;
+    
+    }
+    
+    .downloadCv {
+        background-color: black;
+        width: 350px;
+        height: 70px;
+        border-radius: 8px;
+        cursor: pointer;
+        border: none;
+    }
+    
+    .downloadCv a{
+        color: white;
+        font-family: "Raleway";
+        font-weight: 800;
+        font-size: 1.6em;
+        letter-spacing: 0.08em;
+        border: none;
+        text-decoration: none;
+    }
+    
+    .downloadCv:hover {
+        background-color: #2b2b2b;
+    }
 
+}
 
 
 
