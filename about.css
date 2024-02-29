@@ -1,3 +1,4 @@
+
 #about {
     background-color: white;
     background-repeat: no-repeat;
@@ -249,6 +250,59 @@
         justify-content: center;
         gap: 50px;
         margin-top: 60px;
+    
+    }
+
+    
+}
+
+
+@media  (max-width: 634px) {
+
+    #aboutDiv {
+        padding: 60px 25px 110px;
     }
     
+    #aboutDiv .container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 0px;
+    }
+    
+    #aboutDiv .container .leftDiv  {
+        display: flex;
+        justify-content: center;
+        width: 50%;
+        padding: 10px;
+        height: fit-content;
+    }
+    #aboutDiv .container .rightDiv  {
+        width: 100%;
+        padding: 50px 30px;
+    }
+    
+    #aboutDiv .container .rightDiv h1 {
+        text-align: center;
+        font-size: 0.7em;
+        margin-bottom: 20px;
+    }
+    
+    #aboutDiv .container .rightDiv p {
+        font-size: 0.6em;
+
+    }
+    #aboutMe {
+        width: 180px;
+        
+    }
+    
+    .aboutIcons {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 10px;
+        margin-top: 60px;
+    
+    }
 }
