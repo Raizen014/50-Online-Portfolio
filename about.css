@@ -1,0 +1,116 @@
+
+#about {
+    height: min-content;
+    background-color: white;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+.Ttext {
+    display: flex ;
+    position: relative;
+    top: 100px;
+    left: 150px;
+    font-size: 2.2em;
+    font-family: "Raleway";
+    font-weight: 800;
+    width: fit-content;
+    color:black;
+}
+
+#aboutDiv {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    position: relative;
+    top: 100px;
+    font-size: 2.2em;
+    font-family: "Raleway";
+}
+
+#aboutDiv .container {
+    display: flex;
+    padding: 100px 80px;
+}
+
+#aboutDiv .container .leftDiv  {
+    display: flex;
+    justify-content: center;
+    width: 50%;
+    padding: 30px;
+    height: fit-content;
+}
+#aboutDiv .container .rightDiv  {
+    width: 50%;
+    padding: 30px;
+}
+
+#aboutDiv .container .rightDiv h1 {
+    font-size: 1em;
+    font-family: "Oswald";
+    margin-bottom: 40px;
+}
+
+#aboutDiv .container .rightDiv p {
+    font-size: 0.6em;
+    font-family: "Raleway";
+    font-weight: 400;
+}
+#aboutMe {
+    width: 550px;
+    
+}
+
+.aboutIcons {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 80px;
+    margin-top: 60px;
+
+}
+
+.downloadbtn{
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+
+}
+
+.downloadCv {
+    background-color: black;
+    width: 350px;
+    height: 70px;
+    border-radius: 8px;
+    cursor: pointer;
+    border: none;
+}
+
+.downloadCv a{
+    color: white;
+    font-family: "Raleway";
+    font-weight: 800;
+    font-size: 1.6em;
+    letter-spacing: 0.08em;
+    border: none;
+    text-decoration: none;
+}
+
+.downloadCv:hover {
+    background-color: #2b2b2b;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
