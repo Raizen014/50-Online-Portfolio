@@ -6,8 +6,8 @@
     background-size: cover;
     background-attachment: fixed;
     height: 100vh;
+    
 }
-
 #contact .Ttext {
     display: flex ;
     position: relative;
@@ -23,6 +23,7 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
+
 }
 
 .contactDiv {
@@ -37,6 +38,7 @@
     border-radius: 5px;
     box-shadow: 0 10px 30px rgba(0, 0, 1, 0.45);
 }
+
 
 .contactDiv .leftDiv{
     display: flex;
@@ -57,19 +59,20 @@
     font-family: "Raleway";
     font-weight: 600;
     font-size: 1.6em;
-}
 
+}
 .contactDiv .rightDiv p {
     margin-top: 20px;
     color: rgba(240, 237, 207, 0.502);;
     font-family: "Raleway";
-}
 
+}
 .contactDiv .leftDiv h1 {
     color: black;
     font-family: "Raleway";
     font-weight: 600;
     font-size: 1.6em;
+
 }
 
 .contactDiv .leftDiv form {
@@ -145,4 +148,51 @@ textarea {
     gap: 20px;
     color:rgb(240, 237, 207);
     font-family: "Raleway";
+}
+
+
+@media (min-width: 768px) and (max-width: 1480px) {
+    #contact {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        height: 100vh;
+        
+    }
+    #contact .Ttext {
+        top: 100px;
+        left: 0px;
+        font-size: 2.2em;
+    }
+
+    
+    .contactDiv {
+        height: 600px;
+        width: 90%;
+    }
+    
+    .contactDiv .leftDiv{
+        display: flex;
+        width: 50%;
+        padding: 40px 25px;
+    }
+    
+    .contactDiv .rightDiv{
+        display: flex;
+        width: 50%;
+        padding: 40px 25px;
+    }
+    
+    .contactDiv .rightDiv h1 {
+        font-size: 1.4em;
+    }
+    
+    .contactDiv .rightDiv p {
+        margin-top: 20px;
+    
+    }
+    .contactDiv .leftDiv h1 {
+        font-size: 1.4em;
+    }
+
 }
