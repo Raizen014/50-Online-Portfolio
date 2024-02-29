@@ -247,8 +247,6 @@
         font-size: 0.8em;
     }
 
-
-
 }
 
 @media  (max-width: 634px) {
@@ -264,10 +262,8 @@
         font-size: 2em;
     }
     
-    
     .proj {
         align-items: center;
-
     }
     
     .works {
@@ -278,7 +274,7 @@
         padding: 2px;
     }
 
-    
+
     .projtitle {
 
         font-size: 0.8em;
