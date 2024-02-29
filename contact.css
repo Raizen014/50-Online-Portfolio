@@ -217,8 +217,8 @@ textarea {
         display: flex;
         align-items: center;
         flex-direction: column;
-        background: linear-gradient(to bottom, #ffffff 50%, #1f1f1f  50%);
-        height: 630px;
+        background: linear-gradient(to bottom, #ffffff 60%, #1f1f1f  40%);
+        height: 512px;
         width: 340px;
         position: relative;
         top: 120px;
@@ -238,6 +238,8 @@ textarea {
     .contactDiv .leftDiv form {
         top: 20px;
         gap: 10px;
+        display: flex;
+        align-items: flex-end;
     }
     
     .contactDiv .rightDiv{
@@ -245,7 +247,7 @@ textarea {
         justify-content: center;
         padding: 15px;
         width: 100%;
-        height: 100%;
+        height: 50%;
     }
     
     .contactDiv .rightDiv h1 {
@@ -254,7 +256,7 @@ textarea {
     }
     .contactDiv .rightDiv p {
         font-size: 0.6em;
-        margin-top: 20px;
+        margin-top: 8px;
     
     }
     .contactDiv .leftDiv h1 {
@@ -296,9 +298,9 @@ textarea {
     .contactDiv .rightDiv .contact_info {
         display: flex;
         flex-direction: column;
-        gap: 25px;
+        gap: 10px;
         position: relative;
-        top: 25px;
+        top: 18px;
     }
 
 }
