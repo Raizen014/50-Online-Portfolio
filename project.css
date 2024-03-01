@@ -160,19 +160,13 @@
     }
     
     #projects .projbtn .buttons  {
-        width: 110px;
-        height: 40px;
+        width: 980px;
+        height: 38px;
         font-family: "Raleway";
         font-weight: 600;
         font-size: 0.8em;
     }
-    
-    #projects .projbtn .buttons:hover{
-        background-color: rgb(15, 220, 245);
-        color: #1f1f1f;
-        transition: ease 0.2s;
-        transform: scale(1.050);
-    }
+   
     
     
 } 
@@ -196,7 +190,7 @@
     
     #projects .Ttext {
         display: flex ;
-        top: 100px;
+        top: 100;
         left: 0;
         font-size: 2.2em;
     }
