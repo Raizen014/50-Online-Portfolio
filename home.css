@@ -113,17 +113,7 @@ span {
     width: 700px;
     position: absolute;
     top: -60px;
-}
 
-@media (max-width: 1440px) {
-    #Avatar {
-        width: 300px;
-        position: absolute;
-        top: 10px;
-    }
-    
-
-    
 }
 
 
@@ -178,7 +168,7 @@ span {
     }
 
     #Avatar {
-        width: 400px;
+        width: 350px;
         position: absolute;
         top: 10px;
     }
