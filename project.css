@@ -245,6 +245,7 @@
         font-family: "Raleway";
         font-weight: 600;
         font-size: 0.8em;
+        border: 1.5px solid rgb(15, 220, 245);
     }
 
 }
@@ -273,6 +274,8 @@
         border: 2px solid transparent;
         padding: 2px;
     }
+
+    border: 1px solid rgb(15, 220, 245);
 
 
     .projtitle {
